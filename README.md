@@ -39,7 +39,17 @@ Build DIDKit using [Cargo][]:
 $ cargo build
 ```
 That will give you the DIDKit CLI and HTTP server executables located at
-`target/debug/didkit` and `target/debug/didkit-http`, respectively. You can also build and install DIDKit's components separately. Building the FFI libraries will require additional dependencies. See the corresponding readmes linked below for more info.
+`target/debug/didkit` and `target/debug/didkit-http`, respectively.
+ 
+To make them accessible in your shell globally:
+```sh
+$ cargo install --path=./cli
+$ cargo install --path=./http
+```
+
+You can also build and install DIDKit's components separately. Building the FFI libraries will require additional dependencies. See the corresponding readmes linked below:
+* [cli][]
+* [http][]
 
 
 ### Container
